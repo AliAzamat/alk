@@ -1,33 +1,56 @@
 <template>
-	<main>
-		<section class="hero">
-			<img class="hero__img" :src="heroImg" alt="Our Work Routine" />
-			<TagH className="hero__title" type="h1"> Продвижение сайтов </TagH>
-		</section>
+  <main>
+    <section class="hero">
+      <img class="hero__img" :src="heroImg" alt="Our Work Routine" />
+      <div>
+        <TagH className="hero__title" type="h1"> Продвижение сайтов </TagH>
+      </div>
+    </section>
     <Calculator />
-	</main>
+    <Rates />
+  </main>
 </template>
 
 <script>
-import TagH from "@/components/TagH/TagH.vue";
-import Calculator from '@/components/Calculator/Calculator.vue'
+import Calculator from "@/components/Calculator/Calculator.vue";
+import Rates from "@/components/Rates/Rates.vue";
 import heroImg from "@/assets/hero.jpg";
 export default {
-	components: { TagH,Calculator },
-	data() {
-		return {
-			heroImg,
-		};
-	},
+  components: { Calculator, Rates },
+  data() {
+    return {
+      heroImg,
+    };
+  },
 };
 </script>
 
 <style>
+main {
+  height: 500vh;
+}
+.hero {
+  text-align: center;
+}
 .hero__img {
-	min-height: 358px;
-	max-height: 558px;
+  min-height: 358px;
+  max-height: 558px;
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+.hero div{
+	margin-bottom: 45px;
 }
 .hero__title {
-	margin: 80px 0 45px;
+  font-size: 55px;
+  font-family: "Fira Sans Extra Condensed";
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  font-weight: 700;
+  text-align: center;
 }
 </style>

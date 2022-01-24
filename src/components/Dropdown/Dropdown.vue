@@ -12,12 +12,12 @@
 <script>
 import arrowIcon from "@/assets/arrow.svg";
 export default {
-	props: ['items', 'header'],
+	props: ['items', 'label'],
 	data() {
 		return {
 			arrowIcon,
 			dropdownList: this.$props.items,
-			label: this.$props.header
+			label: this.$props.label
 		};
 	},
 };
@@ -58,6 +58,7 @@ export default {
 }
 ul {
 	position: absolute;
+	z-index: 1;
 	top: 45px;
 	left: 0;
 	background: #eaecef;
