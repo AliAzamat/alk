@@ -4,8 +4,8 @@
       <TagH className="calculator__title" type="h2">Калькулятор</TagH>
       <div class="calculator__row">
         <div>
-			<Filter />
-		</div>
+          <Filter />
+        </div>
         <Checkbox label="Сайт продвигается" name="promote" />
       </div>
       <div class="calculator__row calculator__prices">
@@ -36,7 +36,7 @@
 
 <script>
 import TagH from "@/components/TagH/TagH.vue";
-import Filter from "./Filter.vue"
+import Filter from "./Filter.vue";
 import Checkbox from "../Inputs/Checkbox.vue";
 import Slider from "../Inputs/Slider.vue";
 import Button from "../Buttons/Button.vue";

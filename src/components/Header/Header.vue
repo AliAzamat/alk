@@ -26,4 +26,7 @@ export default {
 	align-items: center;
 	padding: 15px 0;
 }
+.header .container{
+	max-width: 1180px;
+}
 </style>

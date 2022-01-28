@@ -8,6 +8,11 @@
     </section>
     <Calculator />
     <Rates />
+    <ApplyForm />
+    <Reviews />
+    <Tariffs />
+    <Portfolio />
+    <Footer />
   </main>
 </template>
 
@@ -15,8 +20,21 @@
 import Calculator from "@/components/Calculator/Calculator.vue";
 import Rates from "@/components/Rates/Rates.vue";
 import heroImg from "@/assets/hero.jpg";
+import ApplyForm from "@/components/ApplyForm/ApplyForm.vue";
+import Reviews from "@/components/Reviews/Reviews.vue";
+import Tariffs from "@/components/Tariffs/Tariffs.vue";
+import Portfolio from "@/components/Portfolio/Portfolio.vue";
+import Footer from "@/components/Footer/Footer.vue";
 export default {
-  components: { Calculator, Rates },
+  components: {
+    Calculator,
+    Rates,
+    ApplyForm,
+    Reviews,
+    Tariffs,
+    Portfolio,
+    Footer,
+  },
   data() {
     return {
       heroImg,
@@ -39,8 +57,8 @@ main {
   max-width: 100%;
   margin-bottom: 80px;
 }
-.hero div{
-	margin-bottom: 45px;
+.hero div {
+  margin-bottom: 45px;
 }
 .hero__title {
   font-size: 55px;
